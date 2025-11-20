@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Michroma&display=swap");
+body {
+  font-family: Michroma, serif;
+  background: linear-gradient(90deg, #5247e1 0%, #8e26a2 100%);
+}
+p {
+  color: rgb(219, 208, 208);
+}
+.nav-link {
+  font-family: Michroma, serif;
+  color: rgb(255, 255, 255);
+}
+.navbar-nav .nav-link.active {
+  color: rgb(255, 255, 255);
+}
+.navbar.bg-dark {
+  background: linear-gradient(270deg, #401452 0%, #630e74 100%);
+}
+.navbar-brand img {
+  width: 40px;
+}
+.navbar-toggler {
+  background-color: rgb(122, 119, 119);
+}
+.sidebar {
+  color: rgb(216, 206, 206);
+  background: linear-gradient(270deg, #401452 0%, #630e74 100%);
+}
+.card {
+  background: linear-gradient(270deg, #401452 0%, #630e74 100%);
+  color: rgb(219, 208, 208);
+}
+.card a {
+  text-decoration: none;
+  color: rgb(219, 208, 208);
+}
+a {
+  text-decoration: none;
+}
+.slide-text,
+.footer-text {
+  color: rgb(219, 208, 208);
+  margin: auto auto;
+}
+footer {
+  background: linear-gradient(270deg, #651984 0%, #801096 100%);
+}
+.custom-purple {
+  background-color: #883088; /* фиолетовый при наведении */
+  border-color: #802780;
+  color: white;
+}
+.custom-purple:hover {
+  background-color: purple; /* основной цвет */
+  border-color: #800080; /* рамка, если нужна */
+  color: white;
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.call-anim {
+  animation: call 2s ease 0s infinite normal forwards;
+}
+@keyframes call {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
